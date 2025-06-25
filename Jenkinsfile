@@ -8,6 +8,7 @@ pipeline {
 
     environment {
         SF_OCSP_FAIL_OPEN = 'true'
+        PYTHONHTTPSVERIFY = '0'
     }
 
     stages {
