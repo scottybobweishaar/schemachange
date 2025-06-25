@@ -1,9 +1,9 @@
 pipeline {
-    agent { 
-        docker { 
+    agent {
+        docker {
             image "python:3.8"
             args '--user 0:0'
-        } 
+        }
 
     environment {
         SF_OCSP_FAIL_OPEN = 'true'
