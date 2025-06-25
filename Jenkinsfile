@@ -5,6 +5,10 @@ pipeline {
             args '--user 0:0'
         } 
 
+    environment {
+        SF_OCSP_FAIL_OPEN = 'true'
+    }
+
     }
     stages {
         stage('Run schemachange') {
